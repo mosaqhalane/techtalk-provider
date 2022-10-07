@@ -39,8 +39,8 @@ describe("Pact Verification", () => {
         { deployed: true },
       ],
       pactBrokerUrl: process.env.PACT_BROKER_BASE_URL,
-      enablePending: false,
-      includeWipPactsSince: undefined,
+      enablePending: true,
+      includeWipPactsSince: "2022-01-01",
     };
 
     const stateHandlers = {
